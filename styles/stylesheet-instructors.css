@@ -4,39 +4,44 @@
 
 .site {
 	display: grid;
-	grid-template-columns: 15rem repeat(3, 1fr);
-	grid-template-rows: 12rem auto 12rem;
+	grid-template-columns: 17rem repeat(3, 1fr);
+	grid-template-rows: 13rem auto 12rem;
 }
 
 header {grid-column: 2/5;
 grid-row: 1/2;
-background-color: #523e33;
- }
+background-color: #95A38B;
+  
+}
 
 .section1 { grid-column: 1/2;
 grid-row: 1/2;
-background-color: #523e33;}
+background-color: #95A38B;}
 
 nav {grid-column: 1/2;
 grid-row: 2/3;
-background-color: #523e33;}
+background-color: #95A38B;}
 
 .section2 {grid-column: 2/3;
 grid-row: 2/3;
-padding: 2rem 0 0 2rem;
+background-color: #FADF7F;
+  padding: 1rem;
 }
 
 .section3 {grid-column: 3/4;
 grid-row: 2/3;
-padding: 2rem 0 0 2rem;}
+background-color: #FADF7F;
+padding: 1rem;}
 
 .section4 {grid-column: 4/5;
 grid-row: 2/3;
-padding: 2rem 0 0 2rem;}
+background-color: #FADF7F;
+padding: 1rem;}
 
 footer {grid-column: 1/5;
 grid-row: 3/4;
-background-color: #94c840;}
+background-color: #95A38B;
+}
 
 	
 /*--------------------------------------------------------------
@@ -45,17 +50,16 @@ background-color: #94c840;}
 body { margin: 0;}
 
 * {font-family:'Roboto', sans-serif;
-color: #523e33;
 line-height: 2.5rem;
 text-decoration: none;
 }
 /*
 color palette:
-brown: 
-#523e33
+yellow: 
+#FADF7F
 
 green:
-#94c840
+#95A38B
 */
 
 /*--------------------------------------------------------------
@@ -63,10 +67,19 @@ green:
 --------------------------------------------------------------*/
 i {display: inline-block;}
 
-address {font-size: 1.5rem;
+address {font-size: 1.7rem;
 line-height: 2rem;
-color:#94c840;
-padding-bottom: 1rem;}
+padding-bottom: 1rem;
+text-align: center;
+margin: 0;}
+
+h1 {
+  font-size: 2.5rem;
+  color:white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
 /*--------------------------------------------------------------
              logo and search - left side above menu
@@ -81,42 +94,45 @@ margin: 1rem;
 /*--------------------------------------------------------------
                          left side nav menu
 --------------------------------------------------------------*/
+nav { padding: 1rem; 
+}
+
+button {
+    background-color: #FADF7F;
+    border: none;
+    color: black;
+}
 
 nav a {
 font-size: 1.8rem;
 display: block;
-  color:#94c840;
- padding: 1rem; 
+  color: black;
+   padding: 1rem; 
+
 }
 
-a:hover { 
-    background-color: #94c840;
-  color: #523e33;
+nav a:hover { 
+    background-color: #FADF7F;
 }
 
-.active {background-color: #94c840;
-  color: #523e33;}
+.active {background-color: #FADF7F;
+}
+
 /*--------------------------------------------------------------
                             main content
 --------------------------------------------------------------*/
 
-h1 {
-  font-size: 1.9rem;
-  color:white;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-
 .img { width: 240px;
   height: 240px;
   border-radius:60%;
+  margin: 0;
 }
 
 section p {
 line-height: 2rem;
 text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
+  margin: 0;
 }
 
 h2, h3, h4 {
@@ -131,10 +147,20 @@ footer {
   text-align: center;
   padding: 1.5rem;
 }
+ 
+input {width: 9rem;}
 
-footer a {padding: 0 0.3rem;}
+button {font-size: 1.5rem;}
+
+input, button {margin-bottom: 1rem;}
+
+footer a {
+color: white;
+margin: 0.3rem;}
+
 .bold {font-weight: bold;}
 
-article {font-size: 1.2rem;
+article {font-size: 1.3rem;
     text-align: left;
+  margin: 0;
 }
