@@ -5,7 +5,7 @@
 .site {
 	display: grid;
 	grid-template-columns: 17rem repeat(3, 1fr);
-	grid-template-rows: 13rem auto 12rem;
+	grid-template-rows: 13rem auto 16rem;
 }
 
 header {grid-column: 2/5;
