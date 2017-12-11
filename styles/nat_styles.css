@@ -52,6 +52,12 @@ nav li{
   text-align:center;
   font-family: 'Lato', sans-serif;
 }
+
+nav a:hover {
+    font-size: 4em;
+}
+
+
 /*gave the logo file an id to control sizing and positioning*/
 
 #logo{
@@ -79,14 +85,10 @@ h1 {
   font-size:4rem;
   font-family: 'Merriweather', serif;
   grid-column-start:2;
-  margin:inherit;
-  margin-bottom:1%;
-  padding-left:2%;
-  padding-top:.75%;
-  padding-bottom:.75%;
+  margin: inherit; 
   text-align: center;
   color: #532E33;
-   border: none;
+  padding: 15px; 
 }
 
 
@@ -106,27 +108,32 @@ p {
    font-family: 'Lato', sans-serif;
    color: #523E33;
    margin: 2%;
+   padding: 5px; 
 }
 
-.clearfix {
+/* clearfix for floating items */
+
+.clearfix{
     overflow: auto;
+    padding: 10px; 
 }
 
 .img1 {
     float: left;
-    margin: 2%
+    margin: 1%
 }
 
 
 .img2 { 
     float: right;
-    margin: 2%;
+    margin: 1%;
 }
 
 .img3 {
     float: left;
-    margin: 3%;
+    margin: 1%;
 }
+
 
 /* Style for footer */
 
@@ -144,7 +151,7 @@ footer {
 
 address {
   text-align:center;
-  padding 1% 50%;
+  padding 1%;
   font-weight:900;
   color: #532E33;
 }
@@ -153,8 +160,5 @@ footer a {
     color:darkslategrey;
 }
 
-h6 {
-    margin 2%;
-}
 
 
