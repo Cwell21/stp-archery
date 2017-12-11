@@ -21,7 +21,8 @@ body {
   margin-left:1w;
   margin-right:1vw;
 }
-/*Changed aside to NAV so it would pass CSS validator*/
+
+/*nav styling for left hand side*/
 nav{
   background-color:#95A38B;
   float:left;  
@@ -29,22 +30,7 @@ nav{
   grid-row-start:1;
   grid-row-end:3;
 }
-button {
-    background-color: #F9B743;
-    border: none;
-    color: #FDFFFF;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 0.9em;
-    font-family: 'Merriweather', serif;
-}
 
-input[type=text] {
-  width:50%;
-  height:5%
-}
 /*side nav anchor tags*/
 
 nav a{
@@ -165,6 +151,10 @@ address {
 
 footer a {
     color:darkslategrey;
+}
+
+h6 {
+    margin 2%;
 }
 
 
