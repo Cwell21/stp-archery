@@ -3,155 +3,168 @@
 /* font styling including color, style & font family */
 
 * {
-    font-family: sans-serif;
-    font-size: 1rem; 
-    color: black;
+  font-family: serif;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
-
-
-/* Main content wrapper styling */
+/* background color*/
+body {
+  background-color: #95A38B;
+  height:100%;
+}
+/*ADDED GRID LAYOUT - Class Main-wrapper.  This should be the first div.  Wraps entire content inside body*/
 .main-wrapper {
-  background-color: rgb(200,200,200);
-  display: grid;
-}
-
-
-/* styling the logo on the upper left */
-#logo {
-  width:50%;
-  padding-top:1%;
-  padding-left:2%;
-  padding-right: 10%;
-  margin-top: 1vw;
-  margin-left: 1vw;
-    
-}
-
-.main-wrapper {
-  background-color: rgb(200,200,200);
+  background-color: #FFFFFF;
   display: grid;
   grid-template-columns: 18% 82%;
   grid-template-rows: 33% 33% 33%;
-  margin-left:1.5vw;
+  margin-left:1w;
   margin-right:1vw;
 }
-
-.left-nav li {
+/*Changed aside to NAV so it would pass CSS validator*/
+nav{
+  background-color:#95A38B;
+  float:left;  
   grid-column-start:1;
   grid-row-start:1;
   grid-row-end:3;
-  float:left;
 }
-
-nav a {
-    text-decoration:none;
-    font-size:3vw;
-}
-
-nav ul {
-    padding-top:3%;
-    padding-left:10%;
-}
-
-nav li {
-    list-style-type:none;
-    margin-top:20%;
-    padding-right:10%;
-}
-
-/* header styling - center top of page */
-
-.main-content-wrapper h1 {
-    background-color:antiquewhite;
-    font-size:5vw;
-    grid-column-start:3;
-    margin:inherit;
+button {
+    background-color: #F9B743;
+    border: none;
+    color: #FDFFFF;
+    padding: 10px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9em;
+    font-family: 'Merriweather', serif;
 }
 
+input[type=text] {
+  width:50%;
+  height:5%
+}
+/*side nav anchor tags*/
 
-/* main content wrapper styling */
+nav a{
+  text-decoration:none;
+  font-size:3vw;
+  color:#523E33;
+}
+/*side nav unordered list styling*/
+nav ul{
+  padding-top:3%;
+  padding-right:10%;
+  padding-left:10%
+}
+/*side nav list item styling*/
+nav li{
+  list-style-type:none;
+  margin-top:20%;
+  padding-right:10%;
+  text-align:center;
+  font-family: 'Lato', sans-serif;
+}
+/*gave the logo file an id to control sizing and positioning*/
+
+#logo{
+  width:85%;
+  padding-top:10%;
+  padding-left:25%;
+  padding-bottom:15%;
+}
+
+/*main content wrapper */
 
 .main-content-wrapper {
-    grid-column-start: 2;
-    grid-row-start: 1;
-    grid-row-end:2;
-    background-color:azure;
-    overflow:hidden;
+  grid-column-start:2;
+  grid-row-start:1;
+  grid-row-end:2;
+  float:right;
+  background-color:#F2F2F2;
+  color: rgb(0,0,0);
+  overflow:hidden; 
+}
+/*heading 1 Straight to the point, used to style the main heading, will be same from page to page*/
+
+h1 {
+  background-color:#95A38B;
+  font-size:4rem;
+  font-family: 'Merriweather', serif;
+  grid-column-start:2;
+  margin:inherit;
+  margin-bottom:1%;
+  padding-left:2%;
+  padding-top:.75%;
+  padding-bottom:.75%;
+  text-align: center;
+  color: #532E33;
+   border: none;
 }
 
-/* about page heading above main content */
-.page-name {
-    text-align: center;
-    font-size: 1.5em;
-}
 
-/* styling for main content - 3 different sections */
-
-.main-content {
-    background-color:cyan;
-    width: 900px;
-    margin-top:15%;
-    margin-right:3%;
-    margin-left:1%;
-    padding-right: 10%;
-    font-size: 1.5rem;  
-    grid-column-start: 2;
-    grid-row-start: 2;
-    grid-row-end:1;
-}
-
-.main-content section {
-    margin-top: 1%
-    }
-
-.main-content h2 {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.main-content img {
-    width:30%;
-}
-
-.top {
-    float: left;
-    width: 900px;
-    padding: 15px;
-    margin:inherit;
-    border: 1px solid black;
+h2 {
+    font-size: 4vw;
     text-align: left;
+    font-family: 'Lato', sans-serif;
+    margin-left: 2%;
+    color: #523E33;
 }
 
-.middle {
-    float: left;
-    width: 900px;
-    margin: 20px 10px 0px 0px;
-    padding: 15px;
-    border: 1px solid black;
-    text-align: left;
+.main-content-wrapper img {
+    width:50%;
 }
 
-.bottom {
+p {
+   font-family: 'Lato', sans-serif;
+   color: #523E33;
+   margin: 2%;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.img1 {
     float: left;
-    width: 900px;
-    margin: 0px 0px 10px 10px;
-    padding: 15px;
-    border: 1px solid black;
-    text-align: left;
+    margin: 2%
+}
+
+
+.img2 { 
+    float: right;
+    margin: 2%;
+}
+
+.img3 {
+    float: left;
+    margin: 3%;
 }
 
 /* Style for footer */
 
+
 footer {
-  background-color:lightcoral;
+  background-color:#95A38B;
   clear:both;
-  grid-row-start:;
+  grid-row-start:2;
   grid-column-start:1;
   grid-column-end:3;
   width:100%;
+  padding-top:2%;
+  color: #532E33;
+}
+
+address {
   text-align:center;
+  padding 1% 50%;
+  font-weight:900;
+  color: #532E33;
+}
+
+footer a {
+    color:darkslategrey;
 }
 
 
-   
